@@ -90,3 +90,4 @@ DateExt.format(date, "j. n. Y"); // 1. 1. 2020
 - H (returns number of hours with leading zero)
 - i (returns number of minutes with leading zero)
 - s (returns number of seconds with leading zero)
+- v (returns number of milliseconds from two up to three digits)

@@ -59,6 +59,9 @@ describe("DateExt test", () => {
         strictEqual(new DateExt(originalFormattedDate1).format(HUMAN_READABLE_DATE_FORMAT), "2. 2. 2020");
         strictEqual(new DateExt(originalFormattedDate2).format(HUMAN_READABLE_DATE_FORMAT_US), "12/2/2020");
         strictEqual(new DateExt(originalFormattedDate2).format(HUMAN_READABLE_DATE_FORMAT2), "2/12/2020");
+        strictEqual(new DateExt("2019").format("Y-Y"), "2019-2019");
+        strictEqual(new DateExt("2020/10/23 12:01:21:01").format("s:v"), "21:01");
+        strictEqual(new DateExt("2020/10/23 12:01:21:654").format("s:v:s"), "21:654:21");
     });
 
     it("Should successfully verify given date", () => {

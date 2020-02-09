@@ -12,13 +12,14 @@ export default (date, format = "") => {
     }
 
     return format
-        .replace(/y/, date.getFullYear().toString().slice(-2))
-        .replace(/Y/, date.getFullYear())
-        .replace(/n/, date.getMonth() + 1)
-        .replace(/m/, addLeadingZero(date.getMonth() + 1))
-        .replace(/j/, date.getDate())
-        .replace(/d/, addLeadingZero(date.getDate()))
-        .replace(/H/, addLeadingZero(date.getHours()))
-        .replace(/i/, addLeadingZero(date.getMinutes()))
-        .replace(/s/, addLeadingZero(date.getSeconds()));
+        .replace(/y/g, date.getFullYear().toString().slice(-2))
+        .replace(/Y/g, date.getFullYear())
+        .replace(/n/g, date.getMonth() + 1)
+        .replace(/m/g, addLeadingZero(date.getMonth() + 1))
+        .replace(/j/g, date.getDate())
+        .replace(/d/g, addLeadingZero(date.getDate()))
+        .replace(/H/g, addLeadingZero(date.getHours()))
+        .replace(/i/g, addLeadingZero(date.getMinutes()))
+        .replace(/s/g, addLeadingZero(date.getSeconds()))
+        .replace(/v/g, addLeadingZero(date.getMilliseconds()));
 };
