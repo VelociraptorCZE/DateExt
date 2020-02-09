@@ -12,7 +12,7 @@ npm i date-ext-micro --save
 ## Import
 
 ```js
-import DateExt from "dateext";
+import DateExt from "date-ext-micro";
 
 const date = new DateExt(); // returns Date object
 const date2 = DateExt(); // returns string

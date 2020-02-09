@@ -1,7 +1,7 @@
 {
   "name": "date-ext-micro",
   "description": "An extension library which tackles simple tasks with dates in JavaScript.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Simon Raichl",
     "homepage": "https://github.com/velociraptorcze"
