@@ -1,0 +1,26 @@
+{
+  "name": "date-ext-micro",
+  "description": "An extension library which tackles simple tasks with dates in JavaScript.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Simon Raichl",
+    "homepage": "https://github.com/velociraptorcze"
+  },
+  "devDependencies": {
+    "esm": "3.2.25",
+    "mocha": "6.2.2",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup": "^1.31.0"
+  },
+  "keywords": [
+    "date"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -r esm test/dateext.test.js",
+    "build": "rollup -c"
+  }
+}
